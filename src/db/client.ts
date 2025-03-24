@@ -1,15 +1,13 @@
 import { Pool, PoolClient } from 'pg';
 
 // Configuration de la connexion
-const pool = new Pool(
-    process.env.DATABASE_URL
-        ? { connectionString: process.env.DATABASE_URL, ssl: { rejectUnauthorized: false } }
-        : {
+const pool = new Pool({
             user: process.env.POSTGRES_USER,
             host: process.env.POSTGRES_HOST,
             database: process.env.POSTGRES_DB,
             password: process.env.POSTGRES_PASSWORD,
             port: process.env.POSTGRES_PORT ? parseInt(process.env.POSTGRES_PORT) : undefined,
+    ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false
         }
 );
 
