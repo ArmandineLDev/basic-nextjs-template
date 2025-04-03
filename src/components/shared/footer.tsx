@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ThemeSwitch } from '@/components/shared/theme-switch';
+import { ThemeSwitch } from '@/components/shared/header/theme-switch';
 import { Mail, Heart, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
