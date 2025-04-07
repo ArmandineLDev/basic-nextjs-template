@@ -1,0 +1,66 @@
+@layer base {
+    :root {
+        /* Couleurs pour graphiques/visualisations */
+        --chart-1: oklch(0.48 0.22 25); /* Primary (rouge) */
+        --chart-2: oklch(0.48 0.21 240); /* Accent (bleu) */
+        --chart-3: oklch(0.52 0.22 300); /* Violet */
+        --chart-4: oklch(0.65 0.18 150); /* Vert */
+        --chart-5: oklch(0.70 0.22 75); /* Orange */
+    }
+    .dark {
+        /* Couleurs pour graphiques/visualisations en mode sombre */
+        --chart-1: oklch(0.65 0.25 25); /* Rouge */
+        --chart-2: oklch(0.65 0.23 240); /* Bleu */
+        --chart-3: oklch(0.65 0.22 300); /* Violet */
+        --chart-4: oklch(0.65 0.20 150); /* Vert */
+        --chart-5: oklch(0.70 0.24 75); /* Orange */
+    }
+    .high-contrast {
+        /* Couleurs pour graphiques avec contraste amélioré */
+        --chart-1: oklch(0.45 0.28 25);     /* Rouge */
+        --chart-2: oklch(0.45 0.28 240);    /* Bleu */
+        --chart-3: oklch(0.45 0.28 300);    /* Violet */
+        --chart-4: oklch(0.45 0.28 150);    /* Vert */
+        --chart-5: oklch(0.45 0.28 75);     /* Orange */
+    }
+    .dark.high-contrast {
+        /* Couleurs pour graphiques avec contraste élevé en mode sombre */
+        --chart-1: oklch(0.7 0.3 25);       /* Rouge */
+        --chart-2: oklch(0.7 0.3 240);      /* Bleu */
+        --chart-3: oklch(0.7 0.3 300);      /* Violet */
+        --chart-4: oklch(0.7 0.3 150);      /* Vert */
+        --chart-5: oklch(0.7 0.3 75);       /* Orange */
+    }
+    .colorblind {
+        /* Palette de couleurs adaptée aux daltoniens */
+        --chart-1: oklch(0.48 0.21 240);    /* Bleu foncé */
+        --chart-2: oklch(0.7 0.2 90);       /* Jaune */
+        --chart-3: oklch(0.65 0.2 180);     /* Cyan */
+        --chart-4: oklch(0.5 0.22 300);     /* Violet */
+        --chart-5: oklch(0.35 0 0);         /* Gris foncé */
+    }
+    dark.colorblind {
+        /* Palette de couleurs adaptée aux daltoniens - mode sombre */
+        --chart-1: oklch(0.65 0.23 240);    /* Bleu */
+        --chart-2: oklch(0.8 0.22 90);      /* Jaune */
+        --chart-3: oklch(0.7 0.22 180);     /* Cyan */
+        --chart-4: oklch(0.6 0.22 300);     /* Violet */
+        --chart-5: oklch(0.8 0 0);          /* Blanc/gris clair */
+    }
+    .dyslexic {
+        /* Couleurs de graphiques adaptées */
+        --chart-1: oklch(0.5 0.18 25);      /* Rouge */
+        --chart-2: oklch(0.5 0.18 240);     /* Bleu */
+        --chart-3: oklch(0.7 0.18 90);      /* Jaune */
+        --chart-4: oklch(0.5 0.18 300);     /* Violet */
+        --chart-5: oklch(0.5 0.18 150);     /* Vert */
+    }
+    .dark.dyslexic {
+   /* Couleurs de graphiques adaptées - mode sombre */
+        --chart-1: oklch(0.6 0.18 25);      /* Rouge */
+        --chart-2: oklch(0.6 0.18 240);     /* Bleu */
+        --chart-3: oklch(0.7 0.18 90);      /* Jaune */
+        --chart-4: oklch(0.6 0.18 300);     /* Violet */
+        --chart-5: oklch(0.6 0.18 150);     /* Vert */
+    }
+}

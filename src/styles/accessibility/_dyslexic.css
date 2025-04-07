@@ -1,0 +1,72 @@
+@layer base {
+    .dyslexic{
+        /* Police spéciale pour la dyslexie à définir au niveau global */
+        --font-sans: 'OpenDyslexic', system-ui, sans-serif;
+
+        /* Espacement plus important pour faciliter la lecture */
+        --letter-spacing: 0.05em;
+        --line-height: 1.8;
+        --paragraph-spacing: 1.5rem;
+
+        /* Couleurs à plus faible contraste pour réduire la fatigue visuelle */
+        --background: oklch(0.98 0.03 90);  /* Très légère teinte beige/jaune */
+        --foreground: oklch(0.25 0 0);      /* Noir moins intense */
+
+        --card: oklch(0.95 0.03 90);
+        --card-foreground: oklch(0.25 0 0);
+
+        --popover: oklch(0.95 0.03 90);
+        --popover-foreground: oklch(0.25 0 0);
+
+        /* Couleurs adaptées pour réduire la fatigue visuelle */
+        --primary: oklch(0.5 0.18 25);      /* Rouge moins intense */
+        --primary-foreground: oklch(0.98 0 0);
+
+        --secondary: oklch(0.92 0.05 25);
+        --secondary-foreground: oklch(0.25 0 0);
+
+        --accent: oklch(0.5 0.18 240);      /* Bleu moins intense */
+        --accent-foreground: oklch(0.98 0 0);
+
+        --muted: oklch(0.9 0.03 90);
+        --muted-foreground: oklch(0.45 0 0);
+
+        --destructive: oklch(0.6 0.2 25);
+        --destructive-foreground: oklch(0.98 0 0);
+
+        --border: oklch(0.85 0 0);
+        --input: oklch(0.85 0 0);
+        --ring: oklch(0.5 0.18 25);
+
+    }
+    .dark.dyslexic{
+        /* Fond plus sombre mais pas noir complet pour réduire l'éblouissement */
+        --background: oklch(0.18 0.03 90);
+        --foreground: oklch(0.9 0 0);
+
+        --card: oklch(0.25 0.03 90);
+        --card-foreground: oklch(0.9 0 0);
+
+        --popover: oklch(0.25 0.03 90);
+        --popover-foreground: oklch(0.9 0 0);
+
+        --primary: oklch(0.6 0.18 25);
+        --primary-foreground: oklch(0.15 0 0);
+
+        --secondary: oklch(0.35 0.08 25);
+        --secondary-foreground: oklch(0.9 0 0);
+
+        --accent: oklch(0.6 0.18 240);
+        --accent-foreground: oklch(0.15 0 0);
+
+        --muted: oklch(0.3 0.03 90);
+        --muted-foreground: oklch(0.75 0 0);
+
+        --destructive: oklch(0.65 0.2 25);
+        --destructive-foreground: oklch(0.15 0 0);
+
+        --border: oklch(0.8 0 0 / 20%);
+        --input: oklch(0.8 0 0 / 20%);
+        --ring: oklch(0.6 0.18 25);
+    }
+}

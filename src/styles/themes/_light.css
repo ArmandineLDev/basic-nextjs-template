@@ -1,0 +1,38 @@
+@layer base {
+    :root {
+        --radius: 0.625rem;
+
+        /* Mode clair */
+        --background: oklch(0.98 0 0);
+        --foreground: oklch(0.2 0 0);
+
+        --card: oklch(1 0 0);
+        --card-foreground: oklch(0.2 0 0);
+
+        --popover: oklch(1 0 0);
+        --popover-foreground: oklch(0.2 0 0);
+
+        /* Couleur primaire (rouge foncé/bordeaux) */
+        --primary: oklch(0.48 0.22 25); /* conversion de hsl(0 60% 36%) */
+        --primary-foreground: oklch(0.98 0 0);
+
+        /* Couleur secondaire (rose très pâle) */
+        --secondary: oklch(0.94 0.06 25); /* conversion de hsl(0 40% 95%) */
+        --secondary-foreground: oklch(0.2 0 0);
+
+        /* Couleur accent (bleu royal) */
+        --accent: oklch(0.48 0.21 240); /* conversion de hsl(215 85% 32%) */
+        --accent-foreground: oklch(0.98 0 0);
+
+        --muted: oklch(0.96 0 0);
+        --muted-foreground: oklch(0.56 0 0);
+
+        /* Couleur destructive */
+        --destructive: oklch(0.65 0.28 25); /* Rouge vif */
+        --destructive-foreground: oklch(0.98 0 0);
+
+        --border: oklch(0.92 0 0);
+        --input: oklch(0.92 0 0);
+        --ring: oklch(0.48 0.22 25);
+    }
+}

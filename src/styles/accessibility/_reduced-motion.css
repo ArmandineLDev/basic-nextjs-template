@@ -1,0 +1,8 @@
+@layer base {
+    .reduced-motion {
+        * {
+            transition: none !important;
+            animation: none !important;
+        }
+    }
+}

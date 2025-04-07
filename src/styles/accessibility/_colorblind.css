@@ -1,0 +1,65 @@
+@layer base {
+    .colorblind{
+        /* Utilisation de bleus et jaunes au lieu de rouges et verts */
+        --background: oklch(0.98 0 0);
+        --foreground: oklch(0.2 0 0);
+
+        --card: oklch(1 0 0);
+        --card-foreground: oklch(0.2 0 0);
+
+        --popover: oklch(1 0 0);
+        --popover-foreground: oklch(0.2 0 0);
+
+        /* Bleu foncé au lieu de rouge (plus visible pour personnes daltoniennes) */
+        --primary: oklch(0.48 0.21 240);
+        --primary-foreground: oklch(0.98 0 0);
+
+        /* Jaune pâle au lieu de rose */
+        --secondary: oklch(0.90 0.12 90);
+        --secondary-foreground: oklch(0.2 0 0);
+
+        /* Bleu vif comme accent */
+        --accent: oklch(0.65 0.2 200);
+        --accent-foreground: oklch(0.98 0 0);
+
+        --muted: oklch(0.95 0 0);
+        --muted-foreground: oklch(0.56 0 0);
+
+        /* Bleu plus vif pour destructive au lieu de rouge */
+        --destructive: oklch(0.45 0.28 240);
+        --destructive-foreground: oklch(1 0 0);
+
+        --border: oklch(0.92 0 0);
+        --input: oklch(0.92 0 0);
+        --ring: oklch(0.48 0.21 240);
+    }
+    .dark.colorblind{
+        --background: oklch(0.15 0 0);
+        --foreground: oklch(0.98 0 0);
+
+        --card: oklch(0.22 0 0);
+        --card-foreground: oklch(0.98 0 0);
+
+        --popover: oklch(0.25 0 0);
+        --popover-foreground: oklch(0.98 0 0);
+
+        --primary: oklch(0.65 0.23 240);
+        --primary-foreground: oklch(0.1 0 0);
+
+        --secondary: oklch(0.7 0.15 90);
+        --secondary-foreground: oklch(0.1 0 0);
+
+        --accent: oklch(0.7 0.25 200);
+        --accent-foreground: oklch(0.1 0 0);
+
+        --muted: oklch(0.27 0 0);
+        --muted-foreground: oklch(0.7 0 0);
+
+        --destructive: oklch(0.65 0.28 240);
+        --destructive-foreground: oklch(0.1 0 0);
+
+        --border: oklch(1 0 0 / 10%);
+        --input: oklch(1 0 0 / 15%);
+        --ring: oklch(0.65 0.23 240);
+    }
+}
