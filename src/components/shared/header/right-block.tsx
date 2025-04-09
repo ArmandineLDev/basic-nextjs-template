@@ -8,11 +8,7 @@ import {MobileMenuButtonProps} from "@/types/mobile-menu-button-props";
 
 export const RightBlock =  ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuButtonProps) => {
 
-    return ( <div className="container flex items-center justify-between">
-        <LogoBlock />
-
-        {/* Navigation desktop */}
-        <NavbarDesktop />
+    return (
 
         <div className="flex items-center gap-2">
             <ThemeSwitch/>
@@ -22,6 +18,6 @@ export const RightBlock =  ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuBut
 
             {/* Bouton menu mobile */}
             <MobileMenuButton mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
-        </div>
+
     </div>)
 }

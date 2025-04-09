@@ -65,7 +65,7 @@ export default function RootLayout({
         </head>
         <body
             className={cn(
-                'min-h-screen font-sans antialiased',
+                'min-h-screen font-sans antialiased border border-2 border-green-600',
                 fontSans.variable,
                 fontDyslexic.variable
             )}>
